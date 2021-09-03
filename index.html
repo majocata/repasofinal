@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ·repaso· </title>
+	<style>
+		body{
+		background-image: url(fondo.jfif);
+		background-size: cover;
+	}
+
+	.fondoletra{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 5%;
+		left: 30%;
+		width: 40%;
+		height: 15%;
+		background: #FE67D8;
+		border: black 5px solid;
+
+	}
+	@font-face{
+	font-family: ma;
+	src: url(bluee.otf);}
+
+	.fondo{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		width: 90%;
+		height: 65%;
+		background: #FF7B7B;
+		border-radius: 10px;
+		border: black 5px solid;
+
+	}
+	.intro{
+		position: absolute;
+		font-family: me;
+		top: 30%;
+		left: 10%;
+		width: 45%;
+		height: 45%;
+		background: white;
+		border-radius: 10px;
+		border: black 5px solid;
+
+	}
+	@font-face{
+	font-family: me;
+	src: url(jan.ttf);}
+
+	.foto{
+		position: absolute;
+		top: 30%;
+		right: 10%;
+		width: 30%;
+		height: 45%;
+		background-image: url(m1.jfif);
+		background-size: cover;
+		border-radius: 10px;
+		border: black 5px solid;
+
+	}
+	.boton1{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 80%;
+		left: 35%;
+		width: 10%;
+		height: 15%;
+		background: #FE67D8;
+		border-radius: 100px;
+		border: black 5px solid;
+	}
+
+	.boton2{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 80%;
+		right: 35%;
+		width: 10%;
+		height: 15%;
+		background: #FE67D8;
+		border-radius: 100px;
+		border: black 5px solid;
+	}
+
+	.info{
+		position: absolute;
+		font-size: 120%;
+		font-family: me;
+		top: 28%;
+		left: 8%;
+		width: 85%;
+		height: 0%;
+		background: white;
+		
+	}
+
+	.info1{
+		position: absolute;
+		font-size: 120%;
+		font-family: me;
+		top: 28%;
+		left: 8%;
+		width: 85%;
+		height: 0%;
+		background: white;
+		
+	}
+	.cer{
+		position: absolute;
+		font-family: ma;
+		font-size: 130%;
+		top: 65%;
+		left: 84%;
+		width: 7%;
+		height: 0%;
+		background: #67FED6;
+		
+		
+	}
+
+	</style>
+</head>
+<body onkeypress="tecla()">
+	<div class="fondoletra"><center>Madelaine Petsch</center></div>
+	<div class="fondo"></div>
+	<div class="intro">Madelaine Grobbelaar Petsch (nacida el 18 de agosto de 1994) es una actriz y YouTuber estadounidense. Es conocida por interpretar a Cheryl Blossom en la serie de televisión de The CW Riverdale ya Marissa en F the Prom. <br> <br> A los 14 años, comenzó a hablar como vegana, después de haber sido criada como vegetariana . También ha participado en una campaña de sensibilización para PETA .</div>
+	<div class="foto" id="fot"></div>
+	<div class="boton1" onclick="boton()"> <center> 1 </center></div>
+	<div class="boton2" onclick="botonn()"><center> 2 </center></div>
+	<div class="info" id="a"  onkeypress="tecla()"></div>
+	<div class="info1" id="aa"  onkeypress="tecla()"></div>
+	<div class="cer" id="aaa" onclick="cerr()"> </div>
+
+	<script>
+		function tecla() {
+			if(event.code=="KeyA")
+		{
+			
+			a.innerHTML=" En abril de 2018, Petsch colaboró con la empresa de gafas de sol Privé Revaux y lanzó su propia colección de gafas de sol.  Petsch tiene un canal de YouTube , afirmando que la inspiración para comenzar uno fue para que los fanáticos pudieran conocer su verdadera personalidad fuera de la actuación. ";
+			aa.innerHTML=" ";
+
+			
+		}
+		if(event.code=="KeyD")
+		{
+			a.innerHTML=" ";
+			aa.innerHTML="Asistió a la Escuela de Artes de Tacoma y se trasladó a Los Ángeles después de graduarse. Petsch tiene un hermano.  ";
+			
+			
+		}
+}
+		
+		function boton() {
+
+			a.style.height=50+"%";
+			aa.style.height=0+"%";
+			a.innerHTML="Petsch apareció en una campaña publicitaria a nivel nacional para la Coca-Cola en 2014. En febrero de 2016, fue elegida como Cheryl flor en The CW 's Riverdale ,  después de haber sido activado para el papel desde finales de 2015 después de reunirse con el director de casting, que en ese momento estaba trabajando en Legends of Tomorrow . La serie comenzó a filmarse en septiembre de ese año y se estrenó el 26 de enero de 2017. En marzo de 2017, se unió al elenco de la película Polaroid , que se estrenó en 2019.  En enero de 2019, se se anunció que Petsch protagonizaría y produciría la película de comedia de terrorClare a los 16 . (Si presionas la tecla A puedes ver mas informacion)";
+			aa.innerHTML=" ";
+			aaa.style.height=10+"%";
+			aaa.innerHTML="cerrar";
+			
+		}
+
+		function botonn() {
+			aa.style.height=50+"%";
+			a.style.height=0+"%";
+			aa.innerHTML="Petsch nació el 18 de agosto de 1994 en Port Orchard, Washington . A la edad de tres años, comenzó clases de baile y dos años después se inscribió en clases de teatro. Los padres de Petsch son de Sudáfrica y ella pasó los primeros diez años de su vida dividiendo su tiempo entre Sudáfrica y el estado de Washington . (Si presionas la tecla D puedes ver mas informacion)";
+			a.innerHTML=" ";
+			aaa.style.height=10+"%";
+			aaa.innerHTML="cerrar";
+			
+		}
+
+		function cerr(){
+			aa.style.height=0+"%";
+			a.innerHTML=" ";
+			a.style.height=0+"%";
+			aa.innerHTML=" ";
+			aaa.style.height=0+"%";
+			aaa.innerHTML=" ";
+		}
+
+	</script>
+
+</body>
+</html>
